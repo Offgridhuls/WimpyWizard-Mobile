@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Julian Sangiorgio
+//101268880
+//2021-10-03
+//Goal of this program is to show the functionality of my UI options
 public class PauseButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject pauseMenu; // Assign in inspector
+    [Header("Pause screen object")]
+    public GameObject pauseMenu; 
     private bool isShowing;
 
     public void ShowPauseUI()
