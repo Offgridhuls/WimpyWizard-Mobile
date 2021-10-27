@@ -41,4 +41,12 @@ public class Enemy : MonoBehaviour
     {
         rb.velocity = (direction * moveSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            collision.GetComponent<PlayerHealth>().TakeDamage(5);
+        }
+    }
 }
